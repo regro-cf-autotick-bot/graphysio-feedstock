@@ -1,5 +1,5 @@
 {% set name = "graphysio" %}
-{% set version = "2022.7.6" %}
+{% set version = "2022.7.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 978b195f6972acc079713e1d780960921c45bc2c274eb9ba5832237703f48f66
+  sha256: e88fff76016c896ede5af19abdd8dcdddec17fa943ce772500a4f6c770be3e05
 
 build:
   noarch: python
@@ -27,6 +27,7 @@ requirements:
     - pandas =1.4
     - pathvalidate =2.5.0
     - pint =0.19.2
+    - pyqt =5.15.4
     - pyqtgraph =0.12.4
     - scipy =1.8.1
     - numexpr =2.8.0
