@@ -1,5 +1,5 @@
 {% set name = "graphysio" %}
-{% set version = "2022.7.7" %}
+{% set version = "2022.7.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e88fff76016c896ede5af19abdd8dcdddec17fa943ce772500a4f6c770be3e05
+  sha256: f38dd931f734297d7c663f538a6ff222ed3ac8414f2540d8174c14a00ca820a0
 
 build:
   noarch: python
   entry_points:
-    - "graphysio = graphysio.main:main"
+    - graphysio = graphysio.main:main
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
@@ -45,7 +45,7 @@ test:
 
 about:
   home: https://github.com/jaj42/GraPhysio
-  summary: 'GUI time series visualizer for biometric data'
+  summary: GUI time series visualizer for biometric data
   description: |
     GraPhysio is a graphical time series visualizer created for biometric data
     signals from ICU patient monitors. It is however not limited to this. It
