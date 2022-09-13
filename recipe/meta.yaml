@@ -1,5 +1,5 @@
 {% set name = "graphysio" %}
-{% set version = "2022.7.14" %}
+{% set version = "2022.9.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d18e31fafceb61deb466fd14e191172d0020772c85b52b45f28d43c4fce29850
+  sha256: df6047f4202d1a96e7f266a9711fafd125bfe9eba7a139e227fde8f879967a57
 
 build:
   noarch: python
@@ -30,7 +30,7 @@ requirements:
     - pyqt =5.15.4
     - pyqtgraph =0.12.4
     - scipy =1.8.1
-    - numexpr =2.8.0
+    - numexpr =2.8.3
     - physiocurve =2022.7.14
     - pyarrow =8.0.0
     - pyedflib =0.1.29
