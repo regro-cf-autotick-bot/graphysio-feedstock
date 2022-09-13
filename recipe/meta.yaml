@@ -30,7 +30,7 @@ requirements:
     - pyqt =5.15.4
     - pyqtgraph =0.12.4
     - scipy =1.8.1
-    - numexpr =2.8.0
+    - numexpr =2.8.3
     - physiocurve =2022.7.14
     - pyarrow =8.0.0
     - pyedflib =0.1.29
