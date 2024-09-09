@@ -36,7 +36,8 @@ requirements:
     - physiocurve >=2024,<2025
     - pyarrow >=14
     - pyedflib >=0.1.37
-    - pebble  >=5.0.7
+    - pebble >=5.0.7
+    - dwclib >=2024,<2025
 
 test:
   imports:
