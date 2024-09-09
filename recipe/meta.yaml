@@ -26,7 +26,7 @@ requirements:
   run:
     - python >=3.9,<3.13
     - pandas >=2.0,<3
-    - pathvalidate >=3,<4
+    - pathvalidate >=3,<3.2.1
     - pyshortcuts >=1.9,<2
     - pint >=0.23,<0.24
     - pyqt >=5,<7
