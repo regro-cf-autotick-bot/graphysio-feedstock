@@ -22,6 +22,7 @@ requirements:
     - python >=3.9,<3.13
     - pip
     - poetry >=0.12
+    - setuptools
   run:
     - python >=3.9,<3.13
     - pandas >=2.0,<3
