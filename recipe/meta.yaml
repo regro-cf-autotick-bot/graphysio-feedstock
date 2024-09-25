@@ -1,5 +1,5 @@
 {% set name = "graphysio" %}
-{% set version = "2024.9.9" %}
+{% set version = "2024.9.24" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 012a03471e94485774ce0c54c2ad92b373a7755763b4293c8b9475694f5c0842
+  sha256: ab1ffb769f18096b5ab893a46a2c1eea8526c08a3dc8116e1bbdc9f31ee769ab
 
 build:
   noarch: python
@@ -25,19 +25,18 @@ requirements:
     - setuptools
   run:
     - python >=3.9,<3.13
-    - pandas >=2.0,<3
-    - pathvalidate >=3,<3.2.1
-    - pyshortcuts >=1.9,<2
-    - pint >=0.23,<0.24
+    - pandas >=2,<3
+    - pathvalidate >=3,<4
+    - pint >=0.24,<1
     - pyqt >=5,<7
-    - pyqtgraph >=0.13
-    - scipy >=1.13
-    - numexpr >=2.9
-    - physiocurve >=2024,<2025
+    - pyqtgraph >=0.13,<1
+    - scipy >=1.13,<2
+    - numexpr >=2.9,<3
+    - physiocurve >=2024.9.24,<2025
     - pyarrow >=14
-    - pyedflib >=0.1.37
-    - pebble >=5.0.7
-    - dwclib >=2024,<2025
+    - pyedflib >=0.1.37,<0.2
+    - pebble >=5.0.7,<6
+    - dwclib >=2024.9.17,<2025
 
 test:
   imports:
