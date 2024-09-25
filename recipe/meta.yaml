@@ -32,7 +32,7 @@ requirements:
     - pyqtgraph >=0.13,<1
     - scipy >=1.13,<2
     - numexpr >=2.9,<3
-    - physiocurve >=2024,<2025
+    - physiocurve >=2024.9.24,<2025
     - pyarrow >=14
     - pyedflib >=0.1.37,<0.2
     - pebble >=5.0.7,<6
