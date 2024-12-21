@@ -1,13 +1,13 @@
 {% set name = "graphysio" %}
-{% set version = "2024.11.22" %}
+{% set version = "2024.12.20" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e27b5637494d0f4b7be882e412f8a2449b56ccc21f5aaad1880b03f8bdaf87d3
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 97cd96cdd4aaa8972b6ddf14b0f2dad5a9edb52de2aa4c827f7d67a45fc43085
 
 build:
   noarch: python
