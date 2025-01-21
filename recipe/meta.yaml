@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: e27b5637494d0f4b7be882e412f8a2449b56ccc21f5aaad1880b03f8bdaf87d3
 
 build:
@@ -14,17 +14,17 @@ build:
   entry_points:
     - graphysio = graphysio.main:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
   host:
-    - python >=3.9,<3.13
+    - python {{ python_min }}
     - pip
     - poetry >=0.12
     - setuptools
   run:
-    - python >=3.9,<3.13
+    - python >={{ python_min }},<3.13
     - pandas >=2,<3
     - pathvalidate >=3,<4
     - pint >=0.24,<1
@@ -43,6 +43,7 @@ test:
     - graphysio
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
